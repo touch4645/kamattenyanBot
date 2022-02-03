@@ -1,6 +1,5 @@
 import discord
 import config
-from datetime import datetime, timedelta
 
 client = discord.Client()
 
