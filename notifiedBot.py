@@ -28,7 +28,7 @@ async def on_voice_state_update(member, before, after):
             await text_ch.send(msg)
 
         # 退室通知
-        if before.channel is None:
+        if after.channel is None:
             msg = f'{member.name} が退室しました。'
             print(msg)
             await text_ch.send(msg)
